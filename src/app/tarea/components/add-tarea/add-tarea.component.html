@@ -1,0 +1,16 @@
+<form (ngSubmit)="addTarea()">
+  <label for="">Id: </label>
+  <input
+    type="number"
+    [(ngModel)]="tarea.id"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <label for="">Tarea: </label>
+  <input
+    type="text"
+    [(ngModel)]="tarea.tarea"
+    [ngModelOptions]="{ standalone: true }"
+  />
+
+  <button>Agregar</button>
+</form>
